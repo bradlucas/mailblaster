@@ -23,7 +23,7 @@ Put your emails in a single file called `emails.csv`. Put each email on it's own
 
 Next come up with a subject for your message and remember your email address.
 
-   $ java -jar mailblaster-1.0.0.jar -f your-email@foo.com -s "Your email subject" -e emacs.csv -m message.txt
+    $ java -jar mailblaster-1.0.0.jar -f your-email@foo.com -s "Your email subject" -e emacs.csv -m message.txt
 
 There are other options which you can see with the followin.
 
