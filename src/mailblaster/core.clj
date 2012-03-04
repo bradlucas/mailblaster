@@ -42,7 +42,7 @@
   ;; read :message-file for message
   (slurp file))
 
-(defn delay [sec] ; time in seconds
+(defn wait [sec] ; time in seconds
   (println "Waiting..." sec " seconds\n")
   (Thread/sleep (* sec 1000)))
 
@@ -57,7 +57,7 @@
         (println "TESTING: " from to subject bcc)
         (send-mail from to subject body bcc)
         )
-      (deplay (:delay opts)))))
+      (wait (:delay opts)))))
 
 (defn -main [& args]
   (let [[opts args banner]
