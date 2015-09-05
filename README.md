@@ -24,7 +24,7 @@ Put your emails in a single file called `emails.csv`. Put each email on it's own
 
 Next, come up with a subject for your message and remember your email address and pass it along as the from address.
 
-$ java -jar target/mailblaster-1.0.0-standalone.jar -f your-email@foo.com -s "Your email subject" \
+	$ java -jar target/mailblaster-1.0.0-standalone.jar -f your-email@foo.com -s "Your email subject" \
  -e emails.csv -m message.txt
 
 There are other options which you can see with the following.
