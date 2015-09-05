@@ -20,13 +20,14 @@ You need to create a properties file with your smtp host information. The format
 
 ## Usage
 
-	Put your emails in a single file called `emails.csv`. Put each email on it's own line. Next write your email and save it in a file called `message.txt`.
+Put your emails in a single file called `emails.csv`. Put each email on it's own line. Next write your email and save it in a file called `message.txt`.
 
-	Next, come up with a subject for your message and remember your email address and pass it along as the from address.
+Next, come up with a subject for your message and remember your email address and pass it along as the from address.
 
-	$ java -jar target/mailblaster-1.0.0-standalone.jar -f your-email@foo.com -s "Your email subject" -e emails.csv -m message.txt
+$ java -jar target/mailblaster-1.0.0-standalone.jar -f your-email@foo.com -s "Your email subject" \
+ -e emails.csv -m message.txt
 
-	There are other options which you can see with the following.
+There are other options which you can see with the following.
 
 	$  java -jar target/mailblaster-1.0.0-standalone.jar
 
