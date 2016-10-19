@@ -1,4 +1,4 @@
-(defproject org.clojars.blucas/mailblaster "1.0.0"
+(defproject org.clojars.blucas/mailblaster "1.0.1"
   :description "Clojure Mass Mailing Application"
   :dependencies
   [[org.clojure/clojure "1.7.0"]
