@@ -13,7 +13,7 @@
 ;; user="USERNAME"
 ;; pass="PASSWORD"
 ;;
-(def smtp-properties (str (System/getenv "HOME") "/.smtp/smtp.properties"))
+(defn smtp-properties-filepath [] (str (System/getenv "HOME") "/.smtp/smtp.properties"))
 
 ;; Load smtp information out of a file from http://stackoverflow.com/a/7781443/406220
 (defn load-props
@@ -23,10 +23,8 @@
       (.load props reader)
       (into {} (for [[k v] props] [(keyword k) (read-string v)])))))
 
-(def smtp (load-props smtp-properties))
-
 (defn send-mail [from to subject msg bcc]
-  (mail/send-message smtp
+  (mail/send-message (load-props (smtp-properties-filepath))
                      {:from from
                       :to to
                       :bcc bcc
