@@ -1,5 +1,6 @@
 # mailblaster
-=============
+
+[![Clojars Project](https://img.shields.io/clojars/v/org.clojars.blucas/mailblaster.svg)](https://clojars.org/org.clojars.blucas/mailblaster)
 
 Mass mailing in Clojure. Mailblaster lets you email a list of emails with single message. Each recipient is emailed their own message.
 
